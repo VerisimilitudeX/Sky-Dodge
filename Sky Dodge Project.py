@@ -5,7 +5,7 @@ LESSON: Sky Dodge Project
 #### ---- LIBRARIES ---- ####
 
 # E1: Import the random library
-
+import random
 
 # B1: Import the tsk library
 import tsk
@@ -138,10 +138,6 @@ while running:
         if pygame.sprite.collide_rect(dragon, cloud):
             running = False
             break
-
-
-
-
 
     # --- Flame hits a balloon --- #
 
@@ -349,12 +345,3 @@ while running:
 
 # P3: Print the score as part of a message to the user
 # ---> TEST AFTER THIS LINE <--- #
-
-
-
-
-
-
-
-
-
