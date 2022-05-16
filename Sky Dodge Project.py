@@ -5,7 +5,7 @@ LESSON: Sky Dodge Project
 #### ---- LIBRARIES ---- ####
 
 # E1: Import the random library
-import random
+
 
 # B1: Import the tsk library
 import tsk
@@ -139,26 +139,30 @@ while running:
             running = False
             break
 
+
+
+
+
     # --- Flame hits a balloon --- #
 
     # N1: Create a new list for balloons to remove
-    balloonstoremove = []
+
 
     # N2-N4: Go through all the balloons and, if they
     # collide with the flame, add them to the new list
-    for balloon in balloons:
-        if pygame.Sprite.collide_rect(balloon, flame):
-            balloonstoremove.append(balloon)
-            
+
+
+
+
             # P2: Increment the score by 1
-            score += 1
+
 
     # N5-N6: Go through the new list and remove
     # everything in it from the original balloons list
     # ---> TEST AFTER THESE LINES <--- #
-    for balloon in balloonstoremove:
-        if balloon in balloons:
-            balloons.remove(balloon)
+
+
+
 
     #### ---- SPAWN NEW SPRITES ---- ####
 
@@ -166,7 +170,7 @@ while running:
 
     # E6: Track time in the time since last cloud
     # spawned variable
-    timesincelastspawn = c.get_time()
+
 
     # E7-E10: If enough time has passed since the last
     # cloud spawned that it's time to spawn a new one,
