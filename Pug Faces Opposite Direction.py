@@ -1,8 +1,3 @@
-"""
-LESSON: Sky Dodge Project
-WARMUP 5
-"""
-
 import tsk
 import pygame
 pygame.init()
@@ -23,9 +18,7 @@ while drawing:
         if event.type == pygame.MOUSEBUTTONDOWN:
             x, y = pygame.mouse.get_pos()
 
-            # If clicked, flip the sprite
             pug.flip_x = not pug.flip_x
-
 
     background.draw()
     pug.draw()
