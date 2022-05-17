@@ -1,8 +1,3 @@
-"""
-LESSON: Sky Dodge Project
-WARMUP 4
-"""
-
 import tsk
 import random
 import pygame
@@ -35,10 +30,8 @@ while drawing:
         animal = tsk.Sprite(images[rand_index], random.randint(-50, 900), -100)
         rain.append(animal)
 
-    # The rain falls down
     for rainsprite in rain:
         rainsprite.center_y += 5
-
 
     offscreen = []
     for animal in rain:
