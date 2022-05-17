@@ -1,8 +1,3 @@
-"""
-LESSON: Sky Dodge Project
-WARMUP 1
-"""
-
 import tsk
 import pygame
 pygame.init()
@@ -11,7 +6,6 @@ window = pygame.display.set_mode([1018, 573])
 background = tsk.Sprite("CatRoom.jpg", 0, 0)
 cats = []
 
-# Create a row of cats
 for i in range(4):
     x = 50 + i * 250
     cat = tsk.Sprite("Cat.png", x, 200)
