@@ -1,8 +1,3 @@
-"""
-LESSON: Sky Dodge Project
-WARMUP 2
-"""
-
 import tsk
 import pygame
 pygame.init()
@@ -20,14 +15,11 @@ while drawing:
 
     x, y = pygame.mouse.get_pos()
 
-    # If the mouse is over the pug, increase its size
     if pug.rect.collidepoint(x, y):
         pug.scale = 3
 
-    # Otherwise, decrease the size
     else:
         pug.scale = 0.5
-
 
     background.draw()
     pug.draw()
