@@ -1,9 +1,3 @@
-"""
-Sky Dodge Project
-Piyush Acharya
-1. Make the fire shrink the clouds: If the flame collides with a cloud, set the cloud's scale to 25%
-2. 
-"""
 import random
 import tsk
 import pygame
