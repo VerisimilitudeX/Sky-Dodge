@@ -1,9 +1,5 @@
 """
 Sky Dodge Project
-1. Make different clouds travel at different speeds
-2. Make the fire shrink the clouds by 25%
-3. Put a cooldown on the fire for 3 seconds
-4. God mode with right arrow key
 """
 
 import random
