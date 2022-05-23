@@ -1,5 +1,9 @@
 """
 Sky Dodge Project
+1. Make clouds travel at different speeds (using 2 lists, one list makes clouds go really fast, another really slow)
+2. God mode with right arrow key (makes the sprite go faster)
+3. Put a cooldown on the fire for 3 seconds
+4. Make the fire shrink the clouds by 25% (easier to pass through areas with many clouds, need strategy)
 """
 
 import random
@@ -60,12 +64,11 @@ while running:
             if event.key == pygame.K_SPACE:
                 flame_on = True
             elif event.key == pygame.K_DOWN and dragon.y < (573 - 130):
-                dragon_speed = 0.3
+                dragon_speed = 0.5
             elif event.key == pygame.K_UP and dragon.y > 0:
-                dragon_speed = -0.3
+                dragon_speed = -0.5
             if event.key == pygame.K_RIGHT:
-                dash = 3
-                
+                dash = 10
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE:
                 flame_on = True
